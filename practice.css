@@ -1,0 +1,58 @@
+.card {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+}
+body {
+  background-color: black;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+}
+
+/* ===== WHITE SHINE ===== */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%; /* starts hidden on the left */
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.45) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  transition: left 0.75s ease; /* ← this makes it reverse smoothly */
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* On hover → shine runs left to right */
+.card:hover::before {
+  left: 125%;
+}
+
+/* Text */
+.card .text {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 3;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
