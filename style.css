@@ -108,6 +108,47 @@ nav ul {
     opacity: 0;
   }
 }
+.dropDown {
+  position: relative;
+}
+.dropDown > a {
+  align-items: center;
+  width: 100%;
+  /* flex-direction: column; */
+}
+.dropMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
+  width: 225px;
+  padding: 18px 5px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.92);
+  border: 1px solid #aaa;
+  border-radius: 9px;
+
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0.3s ease;
+
+  z-index: 900;
+}
+.dropDown:hover .dropMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.dropMenu li:hover {
+  background: rgba(17, 17, 17, 0.637);
+}
+
 .getStartedBtn {
   background-color: #008751;
   padding: 10px 15px;
@@ -134,7 +175,7 @@ nav ul {
   display: flex;
   gap: 50px;
   /* justify-content: space-between; */
-  width: 35%;
+  width: 45%;
   margin-top: 35px;
 }
 .heroSectionBtn a {
@@ -261,7 +302,7 @@ nav ul {
   font-size: 15px;
 }
 .loanerImg {
-  width: 30%;
+  width: 40%;
   position: relative;
   /* height: 50%; */
 }
@@ -963,5 +1004,362 @@ nav ul {
     width: 100%;
     opacity: 1;
     transform: scale(1);
+  }
+}
+@media (max-width: 2560px) {
+  .header-container,
+  .heroSectionText,
+  .loanSectionContainer,
+  .impactContainer,
+  .cardContainer,
+  .worksContainer,
+  .bankContainer,
+  .benefitCard,
+  .footerContainer {
+    width: 50%;
+  }
+  .heroSectionText p {
+    width: 40%;
+    font-size: 18px;
+  }
+  .mobileMenu {
+    display: none;
+  }
+  .loanerImg {
+    width: 40%;
+  }
+  .worksSection h2 {
+    width: 20%;
+    font-size: 50px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header-container,
+  .heroSectionText,
+  .loanSectionContainer,
+  .impactContainer,
+  .cardContainer,
+  .worksContainer,
+  .bankContainer,
+  .benefitCard,
+  .footerContainer {
+    width: 90%;
+  }
+  .worksSection h2 {
+    width: 40%;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .mobileMenu {
+    display: none;
+  }
+  .benefitText {
+    top: 55%;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    overflow-x: hidden !important;
+  }
+  .header-container,
+  .heroSectionText,
+  .loanSectionContainer,
+  .impactContainer,
+  .cardContainer,
+  .worksContainer,
+  .bankContainer,
+  .benefitCard,
+  .footerContainer {
+    width: 90%;
+  }
+  .heroSectionText h1 {
+    width: 60%;
+  }
+  .heroSectionBtn {
+    width: 45%;
+  }
+  .credicorp {
+    width: 65%;
+  }
+  .impactContainer {
+    z-index: 3;
+  }
+  .cardContainer h2 {
+    width: 60%;
+  }
+  .worksSection h2 {
+    width: 45%;
+  }
+  .manImgDiv img {
+    height: 100%;
+    width: 100%;
+  }
+  .gridDiv {
+    gap: 30px;
+  }
+  .grid1 p {
+    font-size: 14px;
+    width: 95%;
+  }
+  .footerForm div {
+    right: 8%;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header-container,
+  .heroSectionText,
+  .loanSectionContainer,
+  .impactContainer,
+  .cardContainer,
+  .worksContainer,
+  .bankContainer,
+  .benefitCard,
+  .footerContainer {
+    width: 90%;
+  }
+  .header-container nav,
+  .getStartedBtn {
+    display: none;
+  }
+  .mobileMenu {
+    font-size: 20px;
+    display: block;
+  }
+  .gridDiv {
+    gap: 10px;
+  }
+  .heroSectionText h1 {
+    width: 50%;
+    font-size: 30px;
+  }
+  .heroSectionText p {
+    width: 65%;
+  }
+  .heroSectionBtn {
+    width: 100%;
+  }
+
+  .loanerImg {
+    display: none;
+  }
+
+  .mission {
+    font-weight: bold;
+  }
+  .mission:hover {
+    font-size: 18px;
+  }
+
+  .missionContainer {
+    width: 100%;
+  }
+  .missionContainer h2 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: bolder;
+  }
+  .missionContainerP {
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .missionList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .loanSection {
+    padding-top: 5em;
+    padding-bottom: 3em;
+  }
+  .impactContainer {
+    z-index: 3;
+  }
+  .credicorp {
+    width: 90%;
+    line-height: 30px;
+  }
+  .ratings p {
+    width: 100%;
+  }
+  .cardContainer h2 {
+    font-size: 30px;
+    padding-top: 30px;
+    width: 50%;
+  }
+  .cardContainer {
+    height: 100%;
+  }
+  .worksSection h2 {
+    font-size: 50px;
+    font-weight: bolder;
+    width: 70%;
+  }
+  .stepsDiv {
+    width: 100%;
+    flex-direction: column;
+  }
+  .manImgDiv img {
+    width: 100%;
+  }
+
+  .manImgDiv {
+    width: 100%;
+  }
+  .waterMarkLeft,
+  .waterMarkRight {
+    display: none;
+  }
+  .benefitText {
+    top: 60%;
+  }
+  .benefitText h3 {
+    font-size: 40px;
+  }
+  .benefitText a {
+    font-size: 15px;
+  }
+  .benefitCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .gridDiv {
+    gap: 20px;
+  }
+  .grid1 img {
+    width: 200px;
+  }
+  .gridDiv a {
+    font-size: 12px;
+  }
+
+  .header-container img {
+    width: 20%;
+  }
+}
+@media (max-width: 425px) {
+  .header-container img {
+    width: 25%;
+  }
+  .heroSectionText h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+  .heroSectionText p {
+    width: 100%;
+  }
+  .heroSectionBtn {
+    width: 95%;
+    flex-direction: column;
+    /* display: block; */
+  }
+
+  .heroSectionBtn {
+    flex-direction: column;
+    width: 100%;
+  }
+  .accessCreditcard {
+    /* gap: 900px; */
+    /* justify-content: space-between; */
+    width: 100%;
+  }
+  .creditCard {
+    margin-left: 160px;
+  }
+  .missionContainer h2 {
+    font-size: 35px;
+    width: 100%;
+  }
+  .missionList {
+    flex-direction: column;
+  }
+  .missionList div {
+    width: 100%;
+  }
+  .impactImg img {
+    display: none;
+  }
+  .ratings {
+    flex-direction: column;
+  }
+  .ratings div {
+    padding-top: 0;
+    margin: 0;
+  }
+  .genCard {
+    display: flex;
+    flex-direction: column;
+  }
+  .worksSection h2 {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .genBeginCard {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+  }
+  .partner h2 {
+    font-size: 20px;
+  }
+  .benefitDiv h2 {
+    font-size: 30px;
+  }
+  .benefitDiv p {
+    font-size: 14px;
+    margin-top: 20px;
+    width: 70%;
+    justify-self: center;
+  }
+  .benefitSlide {
+    min-height: 50vh;
+  }
+  .benefitText h3 {
+    font-size: 25px;
+  }
+  .benefitText div {
+    font-size: 15px;
+  }
+  .benefitCard {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gridDiv {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+  }
+  .footerForm input {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+  }
+
+  .footerForm div {
+    right: 12%;
+  }
+}
+@media (max-width: 375px) {
+  .heroSectionText h1 {
+    font-size: 30px;
+    width: 95%;
+  }
+  .creditCard {
+    margin-left: 140px;
+  }
+}
+@media (max-width: 320px) {
+  .heroSectionText h1 {
+    font-size: 25px;
+    width: 95%;
+  }
+  .creditCard {
+    margin-left: 100px;
   }
 }
