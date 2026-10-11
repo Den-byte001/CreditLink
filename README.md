@@ -1,39 +1,55 @@
 # CreditLink
 
-CreditLink is a responsive landing page and promotional website for a credit/loan service platform. The project showcases loan solutions, application steps, partner institutions, and financing opportunities in a clean and modern interface.
+A modern, responsive landing page for a credit and financing brand. This project showcases loan options, financial benefits, application guidance, and partner institutions in a clean and engaging design.
 
-## Project Overview
+## Overview
 
-This project was built as a static web application to present a credit and finance brand with:
+CreditLink is designed to present a financial service in a polished, conversion-focused way. The website includes:
 
-- A hero section and value proposition
-- Informational cards about loan categories and benefits
-- A step-by-step application flow
-- Partner/brand highlights
-- A polished, mobile-friendly layout
+- A hero section with strong value messaging
+- Product and financing highlights
+- Visual storytelling using branded assets and illustrations
+- Application guidance content
+- An accessible and responsive layout for desktop and mobile devices
+
+## Purpose
+
+The project was created to help users quickly understand the available credit products and how to apply for them. It combines marketing and informational content into a single experience that feels professional and easy to navigate.
 
 ## Tech Stack
 
 - HTML
 - CSS
-- JavaScript (if used in the page)
-- Static image assets for branding and illustrations
+- Static web assets (images and illustrations)
 
 ## Project Structure
 
-- `index.html` – main landing page
-- `style.css` – page styling and layout
-- `how-to-apply.html` – application guide page
-- `how-to-apply.css` – styling for the application page
-- `images/` and several asset files – branding and UI images
+```text
+CreditLink/
+├── index.html
+├── style.css
+├── how-to-apply.html
+├── how-to-apply.css
+├── README.md
+├── images/
+├── *.png
+└── *.css
+```
 
-## Run Locally
+## Features
 
-Because this is a static website, you can open the project directly in a browser:
+- Responsive landing-page design
+- Finance-focused content sections
+- Clear CTA messaging
+- Brand partner showcase
+- Simple static website setup
 
-1. Clone the repository
-2. Open `index.html` in your browser, or
-3. Serve it locally using a simple static server if preferred
+## Setup
+
+Since this project is a front-end static website, you can run it in any of the following ways:
+
+1. Open `index.html` directly in a browser, or
+2. Serve it locally with a simple web server.
 
 Example:
 
@@ -41,23 +57,15 @@ Example:
 python -m http.server 8000
 ```
 
-Then visit:
+Then open:
 
 ```text
 http://localhost:8000
 ```
 
-## Features
+## Notes
 
-- Responsive design
-- Informative finance-focused landing page
-- Application guidance section
-- Brand and partner showcase
-- Clean UI tailored for credit services
-
-## License
-
-This project is currently provided without a formal license.
+This repository currently contains a static marketing website and branding assets. It is a good starting point for a credit or fintech landing page and can be expanded with additional pages, animations, or dynamic features.
 
 ## Author
 
