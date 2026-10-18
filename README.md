@@ -1,71 +1,50 @@
 # CreditLink
 
-A modern, responsive landing page for a credit and financing brand. This project showcases loan options, financial benefits, application guidance, and partner institutions in a clean and engaging design.
-
-## Overview
-
-CreditLink is designed to present a financial service in a polished, conversion-focused way. The website includes:
-
-- A hero section with strong value messaging
-- Product and financing highlights
-- Visual storytelling using branded assets and illustrations
-- Application guidance content
-- An accessible and responsive layout for desktop and mobile devices
+CreditLink is a responsive finance landing page designed to present a credit brand in a polished and professional way. It emphasizes user trust, accessibility, and a clear path to loan application.
 
 ## Purpose
 
-The project was created to help users quickly understand the available credit products and how to apply for them. It combines marketing and informational content into a single experience that feels professional and easy to navigate.
+The site helps visitors understand the services being offered while improving engagement through a modern visual layout and structured content.
+
+## Key Sections
+
+- Hero banner and messaging
+- Loan and financing highlights
+- Application guidance
+- Partner and brand showcase
+- Clean, mobile-friendly layout
+
+## Features
+
+- Responsive landing-page design
+- Clear CTA messaging
+- Informative application flow
+- Brand partner showcase
+- Simple static setup
 
 ## Tech Stack
 
 - HTML
 - CSS
-- Static web assets (images and illustrations)
+- Static image assets
 
-## Project Structure
+## How to View
 
-```text
-CreditLink/
-├── index.html
-├── style.css
-├── how-to-apply.html
-├── how-to-apply.css
-├── README.md
-├── images/
-├── *.png
-└── *.css
-```
-
-## Features
-
-- Responsive landing-page design
-- Finance-focused content sections
-- Clear CTA messaging
-- Brand partner showcase
-- Simple static website setup
-
-## Setup
-
-Since this project is a front-end static website, you can run it in any of the following ways:
-
-1. Open `index.html` directly in a browser, or
-2. Serve it locally with a simple web server.
-
-Example:
+Open the project in a browser or serve locally:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then open:
+Then visit:
 
-```text
+```
 http://localhost:8000
 ```
 
 ## Notes
 
-This repository currently contains a static marketing website and branding assets. It is a good starting point for a credit or fintech landing page and can be expanded with additional pages, animations, or dynamic features.
+This repository is a static front-end project suitable for showcasing a fintech or credit service website. It can be extended with more pages, animations, or dynamic features.
 
 ## Author
 
